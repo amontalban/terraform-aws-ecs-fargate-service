@@ -2,8 +2,7 @@
 # AWS LOAD BALANCER
 #------------------------------------------------------------------------------
 module "ecs-alb" {
-  source  = "cn-terraform/ecs-alb/aws"
-  version = "1.0.8"
+  source  = "git@github.com:amontalban/terraform-aws-ecs-alb.git//?ref=feat_configure_aws_lb_target_group_protocol"
 
   name_prefix = var.name_prefix
   vpc_id      = var.vpc_id
